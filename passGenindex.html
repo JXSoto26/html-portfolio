@@ -1,0 +1,35 @@
+<DOCTYPE html>
+<html>
+    <head>
+        <title>Random Password Generator</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="passGenstyle.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Welcome to Password Generator!</h1>
+
+            <input type="text"
+            placeholder="Click the button to generate a password"
+            id="display-password"
+            />
+
+        <div class="generate-container">
+            <select name="passwordLength" id="password-length">
+                <option value="0" selected disabled>Select Length</option>
+                <option value="4">4</option>
+                <option value="6">6</option>
+                <option value="12">12</option>
+                <option value="18">18</option>
+                <option value="38">38</option>
+            </select>
+            <button onClick="randomPassword()">Generate Password</button>
+        </div>  
+        
+        <p id="error-info"></p>
+        </div>
+        <script src="passGenscript.js"></script>
+        
+    </body>
+</html>
